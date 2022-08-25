@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>{{ $t("main.welcome", { company: "Yedynka DGTL" }) }}</p>
+    <LocaleSwicher />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import LocaleSwicher from "./components/localeSwicher.vue";
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { LocaleSwicher },
+};
 </script>
 
 <style>
